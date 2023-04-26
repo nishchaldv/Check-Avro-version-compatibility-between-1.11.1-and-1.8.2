@@ -41,7 +41,7 @@ public class GenAvroFileToConToJsonIn1_11_1 {
       DatumWriter<emp> empDatumWriter = new SpecificDatumWriter<emp>(emp.class);
       DataFileWriter<emp> empFileWriter = new DataFileWriter<emp>(empDatumWriter);
 	
-      empFileWriter.create(e1.getSchema(), new File("/Users/ndv/hadoop/avrofiles/AvroFileGenIn1_11_1ToConvertToJsonin1_8_2.avro"));
+      empFileWriter.create(e1.getSchema(), new File("/path/to/avrofiles/AvroFileGenIn1_11_1ToConvertToJsonin1_8_2.avro"));
 	
       empFileWriter.append(e1);
       empFileWriter.append(e2);

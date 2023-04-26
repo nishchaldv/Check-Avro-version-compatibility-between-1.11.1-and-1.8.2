@@ -24,4 +24,6 @@ public class Deserialize {
          System.out.println(em);
       }
    }
+   String version = Schema.class.getPackage().getImplementationVersion();
+   System.out.println("Apache Avro version: " + version);
 }

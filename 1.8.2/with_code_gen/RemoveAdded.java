@@ -32,7 +32,8 @@ public class RemoveAdded {
 
         empDataReader.close();
         empDataWriter.close();
-
+        String version = Schema.class.getPackage().getImplementationVersion();
+        System.out.println("Apache Avro version: " + version);
         System.out.println("Data successfully removed from input file and written to output file.");
     }
 }

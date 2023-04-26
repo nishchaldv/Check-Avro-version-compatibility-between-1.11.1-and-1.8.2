@@ -47,6 +47,8 @@ public class Addtoremove {
       empFileWriter.append(e3);
 	
       empFileWriter.close();
+      String version = Schema.class.getPackage().getImplementationVersion();
+      System.out.println("Apache Avro version: " + version);
       System.out.println("data successfully serialized to remove2 and keep1");
    }
 }

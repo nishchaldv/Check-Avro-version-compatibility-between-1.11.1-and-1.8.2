@@ -50,6 +50,8 @@ public class ReAddData {
       empFileWriter.append(e3);
 	
       empFileWriter.close();
+      String version = Schema.class.getPackage().getImplementationVersion();
+      System.out.println("Apache Avro version: " + version);
       System.out.println("data successfully serialized in 1.8.2");
    }
 }

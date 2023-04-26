@@ -22,6 +22,13 @@ Add the data in SchemaEvolCheckfrom11_1.java file in 1.11.1/with_code_gen folder
 
 ### In converting avro file to json
 
-Generate the avro file using schema in GenAvroFileToConToJsonIn1_8_2.java file in 1.8.2/with_code_gen folder and output file avro will be saved in avrofiles folder take that avrofile and convert it to json using ConvertAvrofrom1_8_2tojsonin1_11_1.java file in 1.11.1/with_code_gen folder. 
+Generate the avro file using GenAvroFileToConToJsonIn1_8_2.java file in 1.8.2/with_code_gen folder and output file avro will be saved in avrofiles folder take that avrofile and convert it to json using ConvertAvrofrom1_8_2tojsonin1_11_1.java file in 1.11.1/with_code_gen folder. 
 
-Generate the avro file using schema in GenAvroFileToConToJsonIn1_11_1.java file in 1.11.1/with_code_gen folder and output file avro will be saved in avrofiles folder take that avrofile and convert it to json using ConvertAvrofrom1_11_1tojsonin1_8_2.java file in 1.8.2/with_code_gen folder.
+Generate the avro file using GenAvroFileToConToJsonIn1_11_1.java file in 1.11.1/with_code_gen folder and output file avro will be saved in avrofiles folder take that avrofile and convert it to json using ConvertAvrofrom1_11_1tojsonin1_8_2.java file in 1.8.2/with_code_gen folder.
+
+### In Compressing avro file
+
+Generate the avro file using GenAvroFileIn1_8_2ToCompressin1_11_1.java file in 1.8.2/with_code_gen folder and output file avro will be saved in avrofiles folder take that avrofile and compress the generated avro file using CompressAvroFileGenFrom1_8_2In1_11_1.java file in 1.11.1/with_code_gen folder. 
+
+Generate the avro file using GenAvroFileIn1_11_1ToCompressin1_8_2.java file in 1.8.2/with_code_gen folder and output file avro will be saved in avrofiles folder take that avrofile and compress the generated avro file using CompressAvroFileGenFrom1_11_1In1_8_2.java file in 1.11.1/with_code_gen folder. 
+

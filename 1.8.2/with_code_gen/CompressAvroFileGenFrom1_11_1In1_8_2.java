@@ -13,14 +13,14 @@ public class CompressAvroFileGenFrom1_11_1In1_8_2 {
 
     public static void main(String[] args) throws IOException {
         // Open the existing Avro file
-        File inputFile = new File("/Users/ndv/hadoop/avrofiles/avrofilegeneratedfrom1.11.1tocompressin1.8.2.avro");
+        File inputFile = new File("/path/to/avrofiles/avrofilegeneratedfrom1.11.1tocompressin1.8.2.avro");
         DataFileReader<GenericRecord> dataFileReader = new DataFileReader<>(inputFile, new GenericDatumReader<>());
 
         // Define schema
         Schema schema = dataFileReader.getSchema();
 
         // Create a new compressed Avro file
-        File outputFile = new File("/Users/ndv/hadoop/avrofiles/CompressedAvroFileGeneratedFrom1.11.1in1.8.2.avro");
+        File outputFile = new File("/path/to/avrofiles/CompressedAvroFileGeneratedFrom1.11.1in1.8.2.avro");
         DataFileWriter<GenericRecord> dataFileWriter = new DataFileWriter<>(new GenericDatumWriter<>());
         dataFileWriter.setCodec(CodecFactory.snappyCodec()); // Use snappy compression
         dataFileWriter.create(schema, outputFile);

@@ -64,7 +64,7 @@ public class GenAvroFileIn1_8_2ToCompressin1_11_1 {
       DatumWriter<emp> empDatumWriter = new SpecificDatumWriter<emp>(emp.class);
       DataFileWriter<emp> empFileWriter = new DataFileWriter<emp>(empDatumWriter);
 	
-      empFileWriter.create(e1.getSchema(), new File("/Users/ndv/hadoop/avrofiles/avrofilegeneratedfrom1.8.2tocompressin1.11.1.avro"));
+      empFileWriter.create(e1.getSchema(), new File("/path/to/avrofiles/avrofilegeneratedfrom1.8.2tocompressin1.11.1.avro"));
 	
       empFileWriter.append(e1);
       empFileWriter.append(e2);

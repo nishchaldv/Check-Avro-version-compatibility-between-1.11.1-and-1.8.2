@@ -10,7 +10,7 @@ public class ConvertAvrofrom1_8_2tojsonin1_11_1 {
 
     public static void main(String[] args) {
         // Open the Avro file
-        File avroFile = new File("/Users/ndv/hadoop/avrofiles/AvroFileGenIn1_8_2ToConvertToJsonin1_11_1.avro");
+        File avroFile = new File("/path/to/avrofiles/AvroFileGenIn1_8_2ToConvertToJsonin1_11_1.avro");
         DatumReader<emp> empDatumReader = new SpecificDatumReader<>(emp.class);
         DataFileReader<emp> dataFileReader;
         try {
@@ -23,7 +23,7 @@ public class ConvertAvrofrom1_8_2tojsonin1_11_1 {
         // Convert each record to JSON and write it to a file
         emp empRecord;
         try {
-            FileWriter writer = new FileWriter("/Users/ndv/hadoop/avrofiles/JsonGeneratedFromAvro1_8_2filein1_11_1.json");
+            FileWriter writer = new FileWriter("/path/to/avrofiles/JsonGeneratedFromAvro1_8_2filein1_11_1.json");
             while (dataFileReader.hasNext()) {
                 empRecord = dataFileReader.next();
                 writer.write(empRecord.toString() + "\n");

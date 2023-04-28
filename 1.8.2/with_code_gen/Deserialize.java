@@ -23,7 +23,7 @@ public class Deserialize {
          em=dataFileReader.next(em);
          System.out.println(em);
       }
-   String version = Schema.class.getPackage().getImplementationVersion();
-   System.out.println("Apache Avro version: " + version);
+      String version = Schema.class.getPackage().getImplementationVersion();
+      System.out.println("Apache Avro version: " + version);
    }
 }
